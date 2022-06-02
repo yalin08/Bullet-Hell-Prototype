@@ -14,7 +14,7 @@ public class Wave
     public GameObject[] typeOfEnemies;
     
     public float spawnInterval;
-    public int numOfEnemiesDef;
+    [HideInInspector]public int numOfEnemiesDef;
 
 
 
@@ -51,11 +51,12 @@ public class waveSpawner : Singleton<waveSpawner>
     BulletSpawn bulletSpawn;
 
     JoystickPlayerExample joystickscript;
+    PlayerStats playerStats;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        playerStats = player.GetComponent<PlayerStats>();
         shipchange = shipmodelChange.Instance;
         bulletSpawn = BulletSpawn.Instance;
         joystickscript = JoystickPlayerExample.Instance;
@@ -210,8 +211,8 @@ public class waveSpawner : Singleton<waveSpawner>
 
 
 
-       
-        shipchange.health = shipchange.maxHealth;
+
+        playerStats.health = playerStats.maxHealth;
        
 
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.14423415, g: 0.12089414, b: 0.22988883, a: 1}
+  m_IndirectSpecularColor: {r: 0.49137372, g: 0.5046625, b: 0.18192914, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -611,6 +611,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &157809005 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1839708446529711881, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1839708446056913765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &176995348
 GameObject:
   m_ObjectHideFlags: 0
@@ -3761,6 +3767,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656517940}
   m_CullTransparentMesh: 0
+--- !u!1 &657248991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1839708446859253586, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1839708446056913765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &663441349
 GameObject:
   m_ObjectHideFlags: 0
@@ -17604,6 +17616,12 @@ Transform:
   m_Father: {fileID: 1218120193}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1656227978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1839708446738839672, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1839708446056913765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1660467107
 GameObject:
   m_ObjectHideFlags: 0
@@ -18298,8 +18316,8 @@ MonoBehaviour:
   loopTimer: 2
   WaveObject: {fileID: 1923440996}
   stars: {fileID: 1259790895}
-  sutazu: {fileID: 898652644}
-  player: {fileID: 0}
+  stars2: {fileID: 898652644}
+  player: {fileID: 28572636681218675}
   skyboxDefault: {r: 0.105882354, g: 0.078431375, b: 0.13333334, a: 1}
   starDefault: {r: 0.9490196, g: 1, b: 0.8235294, a: 1}
   skyBoxColor: {r: 0.105882354, g: 0.078431375, b: 0.13333334, a: 1}
@@ -18649,7 +18667,7 @@ MonoBehaviour:
   xpbar: {fileID: 88296130}
   selectItemCanvas: {fileID: 508015072}
   isDead: 0
-  f: 0
+  toNextLevelUp: 0
 --- !u!114 &1829055036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18736,6 +18754,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844643533}
   m_CullTransparentMesh: 0
+--- !u!1 &1844644184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1839708446299102764, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1839708446056913765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1871723032
 GameObject:
   m_ObjectHideFlags: 0
@@ -20354,6 +20378,31 @@ PrefabInstance:
       propertyPath: openShopUI
       value: 
       objectReference: {fileID: 1083287078}
+    - target: {fileID: 1865184848280039708, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+        type: 3}
+      propertyPath: shipModels.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865184848280039708, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+        type: 3}
+      propertyPath: shipModels.Array.data[0]
+      value: 
+      objectReference: {fileID: 657248991}
+    - target: {fileID: 1865184848280039708, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+        type: 3}
+      propertyPath: shipModels.Array.data[1]
+      value: 
+      objectReference: {fileID: 157809005}
+    - target: {fileID: 1865184848280039708, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+        type: 3}
+      propertyPath: shipModels.Array.data[2]
+      value: 
+      objectReference: {fileID: 1844644184}
+    - target: {fileID: 1865184848280039708, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
+        type: 3}
+      propertyPath: shipModels.Array.data[3]
+      value: 
+      objectReference: {fileID: 1656227978}
     - target: {fileID: 1865184848280039710, guid: 253b8e9b5c47d1547b8b4c7ddd72983b,
         type: 3}
       propertyPath: rb

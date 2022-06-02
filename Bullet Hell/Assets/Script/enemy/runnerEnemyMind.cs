@@ -57,6 +57,7 @@ public class runnerEnemyMind : MonoBehaviour
         if (_distance < distanceForChargeUp)
         {
             isChargingForAttack = true;
+            Debug.Log("enemy charges");
         }
        
            
@@ -102,7 +103,7 @@ public class runnerEnemyMind : MonoBehaviour
 
     Vector3 _lastknownPosition;
     float chargetimer;
-     float distanceForChargeUp;
+    public float distanceForChargeUp;
     
     void chargeForAttack()
     {
